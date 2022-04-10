@@ -2,9 +2,10 @@ import React from "react";
 import { Grid } from '@material-ui/core';
 
 import Product from './Product/Product';
+import jesus from './Product/Images/Jesus.png';
 
 const products = [
-    { id:1, name: "Product 1", price: "10.00", description: "This is product 1", image: "https://via.placeholder.com/150" },
+    { id:1, name: "Product 1", price: "10.00", description: "This is product 1", image: jesus },
     { id:2, name: "Product 2", price: "20.00", description: "This is product 2", image: "https://via.placeholder.com/150" },
 ];
 

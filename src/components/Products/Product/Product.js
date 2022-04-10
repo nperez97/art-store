@@ -10,7 +10,7 @@ const Product = ({ product }) => {
 
     return (
     <Card className={classes.root}>
-        <CardMedia className={classes.media} image="https://via.placeholder.com/150" title={Product.name} />
+        <CardMedia className={classes.media} image={product.image} title={product.name} />
         <CardContent>
             <div className={classes.CardContent}>
                 <Typography variant="h5" gutterBottom>
@@ -19,7 +19,7 @@ const Product = ({ product }) => {
                 <Typography variant="h5">
                     {product.price}
                 </Typography>
-                <Typography variant= "h2" color="textSecondary">{product.description}</Typography>
+                <Typography variant= "body2" color="textSecondary">{product.description}</Typography>
             </div>
         </CardContent>
         <CardActions disableSpacing className={classes.cardActions}>
