@@ -37,7 +37,7 @@ const AddressForm = ({checkoutToken, next}) => {
     }
 
     const fetchShippingOptions = async (checkoutTokenId, country, region = null) => {
-        const options = await commerce.services.getShippingOptions(checkoutTokenId, { country, region });
+        const options = await commerce.checkout.getShippingOptions(checkoutTokenId, { country, region });
 
         setShippingOptions(options);
         setShippingOption(options[0].id);
@@ -66,7 +66,6 @@ const AddressForm = ({checkoutToken, next}) => {
                         <FormInput name='email' label='Email' />
                         <FormInput name='address1' label='Address' />
                         <FormInput name='city' label='City' />
-                        <FormInput name='state' label='State' />
                         <FormInput name='zip' label='Zip' />
                         <Grid item xs={12} sm={6}>
                             <InputLabel id="country">Shipping Country</InputLabel>
@@ -89,11 +88,11 @@ const AddressForm = ({checkoutToken, next}) => {
                             </Select>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <InputLabel id="country">Shipping Country</InputLabel>
+                            <InputLabel id="country">Shipping Options</InputLabel>
                             <Select value={shippingOption} fullwidth onChange={(e) => setShippingOption(e.target.value)}>
                                 {options.map((option) => (
                                     <MenuItem key={option.id} value={option.id}>
-                                        {option.label}
+                                         {option.label}
                                     </MenuItem>
                                 ))}
                             </Select>
