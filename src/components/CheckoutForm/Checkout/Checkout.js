@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Paper, Stepper, Step, StepLabel, Button, Typography, Divider, CircularProgress, CssBaseline } from '@material-ui/core';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { commerce } from '../../../lib/commerce';
 import useStyles from './styles';
@@ -11,9 +11,6 @@ const steps = ['Shipping address', 'Payment details'];
 
 const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     const classes = useStyles();
-    const navigate = useNavigate();
-
-
     const [checkoutToken, setCheckoutToken] = useState(null);
     const [activeStep, setActiveStep] = useState(0);
     const [shippingData, setShippingData] = useState({});
