@@ -12,5 +12,12 @@ For my project, I worked on a shop where my wife can feature and sell her artwor
 Using external resources like stripe and commercejs, it helped do lots of the heavy lifting with payments themselves and also shipping details. These tools also send confirmation emails after a purchase is made. 
 
 ### Technologies Used
+* Material UI (styling)
+* React
+* Stripe
+* Commercejs
 
-
+### What I Would add with More Time 
+* Categorical Filtering of Products
+* Image Grows upon Click
+* Skeleton loading frames
