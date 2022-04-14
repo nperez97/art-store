@@ -17,7 +17,8 @@ Using external resources like stripe and commercejs, it helped do lots of the he
 * Stripe
 * Commercejs
 
-### What I Would add with More Time 
+### What I do More Time 
 * Categorical Filtering of Products
 * Image Grows upon Click
 * Skeleton loading frames
+* Using context instead of prop drilling

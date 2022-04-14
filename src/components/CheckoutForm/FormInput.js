@@ -6,17 +6,6 @@ const FormInput = ({ name, label }) => {
     const { control } = useFormContext();
 
     return (
-        // <Grid item xs={12} sm={6}>
-        //     <Controller
-        //         defaultValue=""
-        //         as={TextField}
-        //         control={control}
-        //         fullWidth
-        //         name={name}
-        //         label={label}
-        //         required
-        //     />
-        // </Grid>
         <Grid item xs={12} sm={6}>
             <Controller
                 defaultValue=""

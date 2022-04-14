@@ -7,9 +7,11 @@ import CartItem from './CartItem/CartItem';
 
 const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmptyCart }) => {
     const classes = useStyles();
+
+    // More Components
     const EmptyCart = () => (
         <Typography variant = "subtitle1">You have no items in your shopping cart.
-            <Link to='/' className={classes.Link}>Add Items</Link>
+            <Link to='/' className={classes.link}> Add Items</Link>
         </Typography>
     )
 
@@ -33,7 +35,6 @@ const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmpt
     )
 
     if (!cart.line_items) return 'Loading...';
-
 
     return (
         <Container>
