@@ -7,8 +7,10 @@ Run following commands in command line:
 
 ## Nefi Perez | IS 542 | Semester Project 
 
+For my project, I worked on a shop where my wife can feature and sell her artwork. The website uses React, Stripe, and Commercejs. In this project, there is functionality to add items to a cart, remove items, clear cart, and checkout items. 
 
+Using external resources like stripe and commercejs, it helped do lots of the heavy lifting with payments themselves and also shipping details. These tools also send confirmation emails after a purchase is made. 
 
-### `npm test`
+### Technologies Used
 
 
