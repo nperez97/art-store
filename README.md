@@ -13,6 +13,7 @@ Using external resources like stripe and commercejs, it helped do lots of the he
 
 ### Technologies Used
 * Material UI (styling)
+* CSS
 * React
 * Stripe
 * Commercejs
